@@ -5,12 +5,6 @@
 #include <cstdint>
 #include "TimedDoor.h"
 
-#include <gtest/gtest.h>
-#include <gmock/gmock.h>
-#include <cstdint>
-#include "TimedDoor.h"
-
-
 class MockTimerClient : public TimerClient {
  public:
   MOCK_METHOD(void, Timeout, ());
